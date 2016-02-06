@@ -251,6 +251,7 @@ module Slim
     register :org,        InterpolateTiltEngine
 
     # These engines are executed at compile time
+    register :es6,        JavaScriptEngine, engine: TiltEngine
     register :coffee,     JavaScriptEngine, engine: TiltEngine
     register :opal,       JavaScriptEngine, engine: TiltEngine
     register :less,       TagEngine, tag: :style,  attributes: { type: 'text/css' },         engine: TiltEngine
